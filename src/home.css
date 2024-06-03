@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to left bottom, var(--color-medium-blue), #00398a, var(--color-dark-blue));
+    /* animation: change-color-anim 40.3s linear infinite; */
+
+}
+
+
+:root {
+    --color-dark-blue: #003366; /* Azul Oscuro */
+    --color-medium-blue: #006699; /* Azul Medio */
+    --color-light-blue: #3399cc; /* Azul Claro */
+    --color-pastel-blue: #99ccff; /* Azul Pastel */
+    --color-light-gray: #f0f0f0c7; /* Gris Claro */
+    --color-dark-gray: #333333; /* Gris Oscuro */
+    --violeta: #5929e5;
+    --violeta1: #9933CC;
+    --violeta2: #9966CC
+}
+
+  
+.home{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(to left bottom, #003375, #240971); */
+    /* animation: change-color-anim 40.3s linear infinite; */
+}
+
+/* .owner{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.owner:hover{
+    filter: grayscale(80%);
+}
+
+.contacto{
+    position: absolute;
+    top: 40px;
+    font-size: 45px;
+    right: 50px;
+    color: #fff
+}
+
+.home-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+    color: var(--color-light-gray);
+    height: 100%;
+}
+
+
+.home-logo img{
+    height: 100px;
+    border-radius: 25px;
+    width: 100px;
+}
+
+.home-logo-medias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    font-size: 27px;
+    color: var(--color-light-gray);
+}
+
+.home-logo-medias div{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    border: 2px solid var(--color-light-);  
+}
+
+.home-logo-medias div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.home-logo-title{
+    display: flex; 
+}
+
+.home-logo-title p{
+    margin-right: 15px;
+}
+
+#b4{
+    color: var(--color-light-blue);
+}
+
+#Tomorrow{
+    color: var(--color-light-gray);
+}
+
+.home-logo-soon{
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: var(--color-pastel-blue);
+    margin-bottom: 20px;
+}
+
+.home-logo-footer{
+    width: 100%;
+}
+
+@keyframes change-color-anim {
+    
+  
+    24% {
+        background-image: linear-gradient(to left bottom, #003373, #240971);
+    }
+    26% {
+        background-image: linear-gradient(to left bottom, #003374, #240969);
+    }
+    28% {
+        background-image: linear-gradient(to left bottom, #003375, #240967);
+    }
+    30% {
+        background-image: linear-gradient(to left bottom, #003376, #240965);
+    }
+    32% {
+        background-image: linear-gradient(to left bottom, #003377, #240963);
+    }
+    34% {
+        background-image: linear-gradient(to left bottom, #003378, #240961);
+    }
+    36% {
+        background-image: linear-gradient(to left bottom, #003379, #240959);
+    }
+    38% {
+        background-image: linear-gradient(to left bottom, #003380, #240957);
+    }
+    40% {
+        background-image: linear-gradient(to left bottom, #003381, #240955);
+    }
+    42% {
+        background-image: linear-gradient(to left bottom, #003382, #240953);
+    }
+    44% {
+        background-image: linear-gradient(to left bottom, #003383, #240951);
+    }
+    46% {
+        background-image: linear-gradient(to left bottom, #003384, #240949);
+    }
+    48% {
+        background-image: linear-gradient(to left bottom, #003385, #240947);
+    }
+    50% {
+        background-image: linear-gradient(to left bottom, #003386, #240945);
+    }
+    52% {
+        background-image: linear-gradient(to left bottom, #003387, #240943);
+    }
+    54% {
+        background-image: linear-gradient(to left bottom, #003388, #240941);
+    }
+    56% {
+        background-image: linear-gradient(to left bottom, #003389, #240939);
+    }
+    58% {
+        background-image: linear-gradient(to left bottom, #003390, #240937);
+    }
+    60% {
+        background-image: linear-gradient(to left bottom, #003391, #240935);
+    }
+    62% {
+        background-image: linear-gradient(to left bottom, #003392, #240933);
+    }
+    64% {
+        background-image: linear-gradient(to left bottom, #003393, #240931);
+    }
+    66% {
+        background-image: linear-gradient(to left bottom, #003394, #240929);
+    }
+    68% {
+        background-image: linear-gradient(to left bottom, #003395, #240927);
+    }
+    70% {
+        background-image: linear-gradient(to left bottom, #003396, #240925);
+    }
+    72% {
+        background-image: linear-gradient(to left bottom, #003397, #240923);
+    }
+    74% {
+        background-image: linear-gradient(to left bottom, #003398, #240921);
+    }
+    76% {
+        background-image: linear-gradient(to left bottom, #003399, #240919);
+    }
+    74% {
+        background-image: linear-gradient(to left bottom, #003398, #240921);
+    }
+    72% {
+        background-image: linear-gradient(to left bottom, #003397, #240923);
+    }
+    70% {
+        background-image: linear-gradient(to left bottom, #003396, #240925);
+    }
+    68% {
+        background-image: linear-gradient(to left bottom, #003395, #240927);
+    }
+    66% {
+        background-image: linear-gradient(to left bottom, #003394, #240929);
+    }
+    64% {
+        background-image: linear-gradient(to left bottom, #003393, #240931);
+    }
+    62% {
+        background-image: linear-gradient(to left bottom, #003392, #240933);
+    }
+
+    60% {
+        background-image: linear-gradient(to left bottom, #003391, #240935);
+    }
+    58% {
+        background-image: linear-gradient(to left bottom, #003390, #240937);
+    }
+    56% {
+        background-image: linear-gradient(to left bottom, #003389, #240939);
+    }
+    54% {
+        background-image: linear-gradient(to left bottom, #003388, #240941);
+    }
+    52% {
+        background-image: linear-gradient(to left bottom, #003387, #240943);
+    }
+    50% {
+        background-image: linear-gradient(to left bottom, #003386, #240945);
+    }
+    44% {
+        background-image: linear-gradient(to left bottom, #003383, #240951);
+    }
+    46% {
+        background-image: linear-gradient(to left bottom, #003384, #240949);
+    }
+    48% {
+        background-image: linear-gradient(to left bottom, #003385, #240947);
+    }
+    42% {
+        background-image: linear-gradient(to left bottom, #003382, #240953);
+    }
+    40% {
+        background-image: linear-gradient(to left bottom, #003381, #240955);
+    }
+}
+
+
+/*owners*/
+
+#owners{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team{
+    color: var(--color-light-gray) !important;
+}
+
+
+.home-logo-soon.person{
+    color: red;
+    width: auto !important;
+}
+
+.person-container{
+    /* background-color: var(--color-light-gray); */
+    margin-top: 100px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 25px;
+}
+
+.person .info{
+    border: 2px solid var(--color-light-gray);
+    background-color: var(--color-light-gray);
+    opacity: 0.8;
+    border-radius: 25px;
+    color: var(--color-dark-gray);
+    font-weight: 500;
+    padding: 25px;
+    line-height: 30px;
+    font-family: "Public Sans", sans-serif; 
+}
+
+/* font-family: "Noto Sans", sans-serif;
+
+font-family: "Public Sans", sans-serif; */
