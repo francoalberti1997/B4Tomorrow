@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-dark-blue: #003366; /* Azul Oscuro */
+    --color-medium-blue: #006699; /* Azul Medio */
+    --color-light-blue: #3399cc; /* Azul Claro */
+    --color-pastel-blue: #99ccff; /* Azul Pastel */
+    --color-light-gray: #f0f0f0c7; /* Gris Claro */
+    --color-dark-gray: #333333; /* Gris Oscuro */
+    --violeta: #5929e5;
+    --violeta1: #9933CC;
+    --violeta2: #9966CC
+}
+
 .person-container {
     min-height: 60vh;
     display: flex;
@@ -75,3 +87,88 @@
 .person:hover img {
     filter: grayscale(0);
 }
+
+/*Loading*/
+
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 164px;
+    /* opacity: 0.5; */
+    aspect-ratio: 1;
+    background: 
+      radial-gradient(farthest-side at bottom right,#fff 90%,#0000),
+      radial-gradient(farthest-side at bottom left ,#fff 90%,#0000),
+      radial-gradient(farthest-side at top    right,#fff 90%,#0000),
+      radial-gradient(farthest-side at top    left ,#fff 90%,#0000),
+      radial-gradient(farthest-side at bottom right,var(--color-pastel-blue) 90%,#0000),
+      radial-gradient(farthest-side at bottom left ,var(--color-pastel-blue) 90%,#0000),
+      radial-gradient(farthest-side at top    right,var(--color-pastel-blue) 90%,#0000),
+      radial-gradient(farthest-side at top    left ,var(--color-pastel-blue) 90%,#0000),
+      radial-gradient(farthest-side at bottom right,var(--color-medium-blue) 90%,#0000),
+      radial-gradient(farthest-side at bottom left ,var(--color-medium-blue) 90%,#0000),
+      radial-gradient(farthest-side at top    right,var(--color-medium-blue) 90%,#0000),
+      radial-gradient(farthest-side at top    left ,var(--color-medium-blue) 90%,#0000);
+    background-size: 25% 25%;
+    background-repeat: no-repeat;
+    /* top: 40%; */
+    /* left: 45%; */
+    /* position: absolute; */
+    animation: l16 5s infinite;
+}
+
+  @keyframes fadeIn {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .preloader{
+    background-image: linear-gradient(to left bottom, var(--color-medium-blue), #00398a, var(--color-dark-blue));
+    width: 100% !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh !important;
+  }
+
+  .preloader.logo-pre{
+    animation: fadeIn 6s;
+  }
+
+  .preloader img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+
+  @keyframes l16{
+    0% {background-position: 
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3)}
+    16.67% {background-position: 
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3)}
+    33.33% {background-position: 
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3),
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3)}
+    50% {background-position: 
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3),
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3),
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3)}
+    66.67% {background-position: 
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3),
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3)}
+    83.33% {background-position: 
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(0*100%/3) calc(0*100%/3), calc(3*100%/3) calc(0*100%/3), calc(0*100%/3) calc(3*100%/3), calc(3*100%/3) calc(3*100%/3)}
+    100% {background-position: 
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3),
+          calc(1*100%/3) calc(1*100%/3), calc(2*100%/3) calc(1*100%/3), calc(1*100%/3) calc(2*100%/3), calc(2*100%/3) calc(2*100%/3)}
+  }

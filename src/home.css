@@ -6,8 +6,18 @@ body{
     z-index: -1;
     background-image: linear-gradient(to left bottom, var(--color-medium-blue), #00398a, var(--color-dark-blue));
     /* animation: change-color-anim 40.3s linear infinite; */
-
 }
+
+
+@keyframes bg{
+   0%{
+     background-position-x: 0;
+   }
+   
+   100%{
+     background-position-x: 10000px ;
+   }
+ }
 
 
 :root {
@@ -32,8 +42,23 @@ body{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 4s ease;
     /* background-image: linear-gradient(to left bottom, #003375, #240971); */
     /* animation: change-color-anim 40.3s linear infinite; */
+}
+
+.logo-b4t{
+    position: absolute;
+    top: 40px;
+    left: 40px; 
+}
+
+.logo-b4t img{
+    border-radius: 100%;
+    height: 95px;
+    width: 95px;
+
 }
 
 /* .owner{
@@ -120,7 +145,7 @@ body{
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
     font-size: 35px;
-    color: var(--color-pastel-blue);
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -270,20 +295,6 @@ body{
 }
 
 
-/*owners*/
-
-#owners{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.team{
-    color: var(--color-light-gray) !important;
-}
-
 
 .home-logo-soon.person{
     color: red;
@@ -312,3 +323,137 @@ body{
 /* font-family: "Noto Sans", sans-serif;
 
 font-family: "Public Sans", sans-serif; */
+
+.home.show{
+    opacity: 1;
+}
+
+.arrow-dw{
+    position: fixed;
+    top: 90vh;
+    color: var(--color-light-gray);
+    right: 70px;
+    font-size: 45px;
+    z-index: 10;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about .home-logo-title{
+    font-size: 35px;
+} 
+
+.home-logo-about{
+    width: 600px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.team{
+    font-size: 35px;
+    color: #fff !important;
+    font-weight: 800;
+}
+
+
+/*owners*/
+
+#owners{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.info h3{
+    font-size: 28px;
+}
+
+
+
+.line-body{
+    background: linear-gradient(to right, #1e5799 0%,#2ce0bf 19%,#76dd2c 40%,#dba62b 60%,#e02cbf 83%,#1e5799 100%); 
+   background-size: 10000px 100%;
+   animation: bg 15s linear infinite ;
+   position: absolute;
+   z-index: 10000;
+ }
+ @keyframes bg{
+   0%{
+     background-position-x: 0;
+   }
+   
+   100%{
+     background-position-x: 10000px ;
+   }
+ }
+
+
+ @media screen and (max-height:667px){
+    .home-logo{
+        justify-content: space-between;
+    }
+
+    .home-logo-title{
+        margin-top: 50px;
+    }
+    .home-logo-footer{
+        padding-bottom: 50px;
+    }
+
+    .logo-b4t{
+        display: none;
+    }
+ }
+
+ @media screen and (max-height:547px){
+    .home-logo{
+        justify-content: space-between;
+    }
+
+    .home-logo-title{
+        margin-top: 70px;
+    }
+    .home-logo-footer{
+        padding-bottom: 0;
+    }
+ }
+
+ @media screen and (max-height:450px){
+    .home-logo{
+        justify-content: space-between;
+    }
+
+    .home-logo-title{
+        margin-top: 20px;
+    }
+    .home-logo-footer{
+        padding-bottom: 0;
+    }
+    .home-logo-soon{
+        font-size: 30px;
+    }
+ }
+
+ @media screen and (max-width:887px){
+    .arrow-dw{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width:667px){
+    .home-logo-title{
+        font-size: 48px;
+    }
+    .logo-b4t{
+        display: none;
+    }
+ }
