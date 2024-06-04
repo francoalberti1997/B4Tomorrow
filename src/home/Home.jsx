@@ -3,6 +3,13 @@ import Dna from "../home/Dna.jsx"
 import { useState, useEffect } from 'react';
 import logo from "../preloader/logoa.png"
 import Owners from '../owners/Owners.jsx'
+import daniela from "../owners/Daniela.png"
+import rodolfo from "../owners/Rodolfo.png"
+import seba from "../owners/Seba.png"
+import delfina from "../owners/Delfina.png"
+import Carousel from './Carousel.jsx';
+
+
 
 const Home = () => {
     useEffect(() => {
@@ -27,9 +34,21 @@ const Home = () => {
     return (
         <div className="home">
                 <>
-                    <div className='arrow-dw' onClick={handleArrowClick}>
-                        <i class="fa-solid fa-chevron-down"></i>
+                    <div className="owner-image">
+                        <img src={daniela} alt="" className='daniela'/>
+                        <img src={rodolfo} alt="" className='rodolfo'/>
                     </div>
+
+                    <div className="ds">
+                        <img src={delfina} alt="" className='delfina'/>
+                        <img src={seba} alt="" className='seba'/>
+                    </div>
+
+                    <Carousel/>
+               
+                    {/* <div className='arrow-dw' onClick={handleArrowClick}>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div> */}
                     <div id="dna">
                         <Dna />
                     </div>

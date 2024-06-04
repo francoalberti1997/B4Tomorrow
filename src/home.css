@@ -4,7 +4,7 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: linear-gradient(to left bottom, var(--color-medium-blue), #00398a, var(--color-dark-blue));
+    background-image: linear-gradient(to left bottom, var(--color-medium-blue), #00398a, var(--color-dark-gray));
     /* animation: change-color-anim 40.3s linear infinite; */
 }
 
@@ -19,6 +19,9 @@ body{
    }
  }
 
+.carousel{
+    display: none;
+}
 
 :root {
     --color-dark-blue: #003366; /* Azul Oscuro */
@@ -51,6 +54,7 @@ body{
 .logo-b4t{
     position: absolute;
     top: 40px;
+    opacity: 0.5;
     left: 40px; 
 }
 
@@ -361,6 +365,60 @@ font-family: "Public Sans", sans-serif; */
     font-weight: 800;
 }
 
+.owner-image{
+    position: absolute;
+    left: 0px;
+    /* background-color: var(--violeta); */
+    display: flex;
+    top: 50vh;
+}
+
+.ds{
+    display: flex;
+    top: 50vh;
+    right: 0px;
+    position: absolute;
+    right: 0px;
+    
+    /* background-color: red; */
+}
+
+
+
+.owner-image,.ds img{
+    width: auto;
+}
+
+.seba{
+    height: 500px;
+    opacity: 0.5;
+    bottom: 50px;
+    position: relative;
+}
+
+.delfina{
+    height: 500px;
+    opacity: 0.5;
+    bottom: 50px;
+    position: relative;
+}
+
+.rodolfo{
+    position: relative;
+    /* filter: brightness(1.1); */
+    opacity: 0.5;
+    right: 180px;
+    height: 450px;
+}
+
+.daniela{
+    /* filter: brightness(1.3); */
+    /* mix-blend-mode: overlay; */
+    height: 500px;
+    opacity: 0.5;
+    bottom: 50px;
+    position: relative;
+}
 
 /*owners*/
 
@@ -396,64 +454,119 @@ font-family: "Public Sans", sans-serif; */
    }
  }
 
+ @media screen and (max-height:750px){
+    .home{
+        min-height: 850px;
+    }
 
- @media screen and (max-height:667px){
     .home-logo{
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
+    #dna{
+        position: absolute;
+        top: 250px !important;
+    }
+ }
+
+
+ @media screen and (max-height:1900px){
+    .home{
+        min-height: 800px;
+    }
+
+    #dna{
+        position: absolute;
+        top: 350px !important;
+    }
     .home-logo-title{
-        margin-top: 50px;
+        margin-bottom: 400px;
     }
-    .home-logo-footer{
-        padding-bottom: 50px;
+}
+
+ @media screen and (max-height:750px){
+    .home{
+        min-height: 850px;
     }
 
-    .logo-b4t{
+    .home-logo{
+        justify-content: space-evenly;
+    }
+
+    .owner-image, .ds{
+        top: 360px;
+    }
+ }
+
+@media screen and (max-width:1800px) and (max-height:900px){
+    #dna{
+        position: absolute;
+        top: 250px !important;
+    }
+}
+
+@media screen and (max-width:1284px){
+    .ds{
+        position: absolute;
+        right: 0;
+        /* top: 38vh;         */
+    }
+    .daniela{
+        left: 45px;
+    }
+    .delfina, .seba{
+        height: 450px;
+        bottom: 0;
+    }
+}
+
+
+@media screen and (max-width:1214px){
+
+    .delfina, .seba{
+        height: 395px;
+        bottom: 0;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width:1140px){
+    .owner-image,
+    .ds{
         display: none;
     }
- }
 
- @media screen and (max-height:547px){
-    .home-logo{
-        justify-content: space-between;
+    .carousel {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%; /* Ajusta esto según el tamaño de tus imágenes */
+        overflow: hidden;
+    }
+    
+    .owner-carousel {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .owner-carousel.active {
+        opacity: 1;
     }
 
-    .home-logo-title{
-        margin-top: 70px;
-    }
-    .home-logo-footer{
-        padding-bottom: 0;
-    }
- }
-
- @media screen and (max-height:450px){
-    .home-logo{
-        justify-content: space-between;
+    .owner-cs {
+        position: absolute;
+        left: 20%;
+        top: 0;
     }
 
-    .home-logo-title{
-        margin-top: 20px;
-    }
-    .home-logo-footer{
-        padding-bottom: 0;
-    }
-    .home-logo-soon{
-        font-size: 30px;
-    }
- }
-
- @media screen and (max-width:887px){
-    .arrow-dw{
+    #dna{
         display: none;
     }
- }
-
- @media screen and (max-width:667px){
-    .home-logo-title{
-        font-size: 48px;
-    }
-    .logo-b4t{
-        display: none;
-    }
- }
+    
+}

@@ -102,14 +102,14 @@
       radial-gradient(farthest-side at bottom left ,#fff 90%,#0000),
       radial-gradient(farthest-side at top    right,#fff 90%,#0000),
       radial-gradient(farthest-side at top    left ,#fff 90%,#0000),
-      radial-gradient(farthest-side at bottom right,var(--color-pastel-blue) 90%,#0000),
-      radial-gradient(farthest-side at bottom left ,var(--color-pastel-blue) 90%,#0000),
-      radial-gradient(farthest-side at top    right,var(--color-pastel-blue) 90%,#0000),
-      radial-gradient(farthest-side at top    left ,var(--color-pastel-blue) 90%,#0000),
-      radial-gradient(farthest-side at bottom right,var(--color-medium-blue) 90%,#0000),
-      radial-gradient(farthest-side at bottom left ,var(--color-medium-blue) 90%,#0000),
-      radial-gradient(farthest-side at top    right,var(--color-medium-blue) 90%,#0000),
-      radial-gradient(farthest-side at top    left ,var(--color-medium-blue) 90%,#0000);
+      radial-gradient(farthest-side at bottom right,#fff 90%,#0000),
+      radial-gradient(farthest-side at bottom left ,#fff 90%,#0000),
+      radial-gradient(farthest-side at top    right,#fff 90%,#0000),
+      radial-gradient(farthest-side at top    left ,#fff 90%,#0000),
+      radial-gradient(farthest-side at bottom right,#fff 90%,#0000),
+      radial-gradient(farthest-side at bottom left ,#fff 90%,#0000),
+      radial-gradient(farthest-side at top    right,#fff 90%,#0000),
+      radial-gradient(farthest-side at top    left ,#fff 90%,#0000);
     background-size: 25% 25%;
     background-repeat: no-repeat;
     /* top: 40%; */

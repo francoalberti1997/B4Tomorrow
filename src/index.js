@@ -28,7 +28,7 @@ const App = () => {
         <>
         
           <Home />
-          <Owners />
+          {/* <Owners /> */}
         </>
       )}
 
