@@ -24,16 +24,22 @@ const App = () => {
 
   return (
     <>
-      {/* {showPreloader ? (
+      {showPreloader ? (
+                <>
+
+        
+        <Particles/>
         <Preloader />
-      ) : ( */}
+        </>
+
+      ) : (
         <>
         
           <Home />
           <Particles/>
           {/* <Owners /> */}
         </>
-      {/* )} */}
+       )} 
 
     </>
   );

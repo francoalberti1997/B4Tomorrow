@@ -6,6 +6,7 @@ body{
     z-index: -1;
     background-image: linear-gradient(to left bottom, var(--color-medium-blue), #00398a, var(--color-dark-gray));
     /* animation: change-color-anim 40.3s linear infinite; */
+    overflow: hidden;
 }
 
 
@@ -43,6 +44,7 @@ body{
     width: 100%;
     height: 100%;
     opacity: 0.5;
+    overflow: hidden;
 }
   
 .home{
@@ -50,6 +52,7 @@ body{
     overflow: hidden;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -623,5 +626,49 @@ font-family: "Public Sans", sans-serif; */
     }
     .seba{
         height:550px !important;
+    }
+
+    .owner-image{
+        margin: 450px !important;
+    }
+}
+
+@media screen and (max-width:1140px){
+    .daniela{
+        height:520px !important;
+        left: 90px;
+        top: -32px;
+    }
+    .rodolfo{
+        height:420px !important;
+    }
+
+    .delfina{
+        height:450px !important;
+    }
+    .seba{
+        height:450px !important;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    .daniela{
+        height:520px !important;
+        left: 90px;
+        top: -32px;
+    }
+    .rodolfo{
+        height:420px !important;
+    }
+
+    .delfina{
+        height:350px !important;
+    }
+    .seba{
+        height:350px !important;
+    }
+    .owner-image{
+        left: 150px !important;
     }
 }

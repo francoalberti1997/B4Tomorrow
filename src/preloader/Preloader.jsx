@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../preloader/Logo.png"
 import { useState, useEffect } from 'react';
+import fondo_neurona from '../home/neurona.jpg'
 
 const Preloader = () => {
 
@@ -25,6 +26,7 @@ const Preloader = () => {
                 <img src={logo} alt="Logo" />
             </div>
         )} */}
+                    {/* <img src={fondo_neurona} id="fondo_neurona_css" alt="" /> */}
 
 <div className='preloader logo-pre'>
             <div className="loader"></div> 
