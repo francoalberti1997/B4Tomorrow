@@ -42,7 +42,7 @@ body{
     right:0;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.5;
 }
   
 .home{
@@ -401,14 +401,15 @@ font-family: "Public Sans", sans-serif; */
 .seba{
     height: 500px;
     opacity: 0.78;
-    bottom: 50px;
+    /* bottom: 50px; */
     position: relative;
 }
+
 
 .delfina{
     height: 500px;
     opacity: 0.78;
-    bottom: 50px;
+    /* bottom: 50px; */
     position: relative;
 }
 
@@ -416,14 +417,14 @@ font-family: "Public Sans", sans-serif; */
     position: relative;
     /* filter: brightness(1.1); */
     opacity: 0.78;
-    right: 180px;
-    height: 450px;
+    right: 140px;
+    height: 500px;
 }
 
 .daniela{
     /* filter: brightness(1.3); */
     /* mix-blend-mode: overlay; */
-    height: 500px;
+    height: 550px;
     opacity: 0.78;
     bottom: 50px;
     position: relative;
@@ -463,6 +464,14 @@ font-family: "Public Sans", sans-serif; */
    }
  }
 
+
+ @media screen and (max-width:1500px) and (min-width:1200px){
+    .daniela{
+        left: 120px;
+    }
+}
+
+
  @media screen and (max-height:750px){
     .home{
         min-height: 850px;
@@ -491,7 +500,13 @@ font-family: "Public Sans", sans-serif; */
     .home-logo-title{
         margin-bottom: 400px;
     }
+    .daniela{
+        left: 120px;
+    }
 }
+
+
+
 
  @media screen and (max-height:750px){
     .home{
@@ -539,7 +554,7 @@ font-family: "Public Sans", sans-serif; */
     }
 }
 
-@media screen and (max-width:1140px){
+@media screen and (max-width:1440px){
     .owner-image,
     .ds{
         display: none;
@@ -590,4 +605,23 @@ font-family: "Public Sans", sans-serif; */
         display: none;
     }
     
+}
+
+
+@media screen and (max-width:1440px){
+    .daniela{
+        height:620px !important;
+        left: 90px;
+        top: -32px;
+    }
+    .rodolfo{
+        height:550px !important;
+    }
+
+    .delfina{
+        height:550px !important;
+    }
+    .seba{
+        height:550px !important;
+    }
 }
