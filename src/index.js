@@ -7,6 +7,8 @@ import "../src/home.css";
 import Owners from './owners/Owners.jsx';
 import './owners/style.css';
 import Preloader from './preloader/Preloader.jsx';
+import "./home/particles.css"
+import Particles from './home/Particles.jsx';
 
 const App = () => {
   const [showPreloader, setShowPreloader] = useState(true);
@@ -22,15 +24,16 @@ const App = () => {
 
   return (
     <>
-      {showPreloader ? (
+      {/* {showPreloader ? (
         <Preloader />
-      ) : (
+      ) : ( */}
         <>
         
           <Home />
+          <Particles/>
           {/* <Owners /> */}
         </>
-      )}
+      {/* )} */}
 
     </>
   );

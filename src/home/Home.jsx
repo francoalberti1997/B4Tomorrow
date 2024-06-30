@@ -8,8 +8,7 @@ import rodolfo from "../owners/Rodolfo.png"
 import seba from "../owners/Seba.png"
 import delfina from "../owners/Delfina.png"
 import Carousel from './Carousel.jsx';
-
-
+import fondo_neurona from '../home/neurona2.jpg'
 
 const Home = () => {
     useEffect(() => {
@@ -34,6 +33,7 @@ const Home = () => {
     return (
         <div className="home">
                 <>
+                    <img src={fondo_neurona} id="fondo_neurona_css" alt="" />
                     <div className="owner-image">
                         <img src={daniela} alt="" className='daniela'/>
                         <img src={rodolfo} alt="" className='rodolfo'/>
@@ -52,9 +52,9 @@ const Home = () => {
                     <div id="dna">
                         <Dna />
                     </div>
-                    <div className="logo-b4t">
+                    {/* <div className="logo-b4t">
                         <img src={logo} alt="" />
-                    </div>
+                    </div> */}
                     <div className="contacto">
                         <i className="fa-solid fa-headset"></i>
                     </div>
